@@ -1,0 +1,6 @@
+sql injection 
+Key Concepts:
+Prepared Statements: $stmt = $conn->prepare($sql); prepares the SQL query with placeholders.
+Binding Parameters: $stmt->bind_param("s", $email); binds the $email parameter to the query, using s for a string type.
+Executing the Query: $stmt->execute(); executes the query securely.
+Fetching Results: $result = $stmt->get_result(); retrieves the query result.
